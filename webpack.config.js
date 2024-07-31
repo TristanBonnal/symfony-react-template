@@ -30,6 +30,16 @@ Encore
     })
 
     .enableSassLoader()
+
+    .configureDevServerOptions(options => {
+        options.liveReload = true;
+        options.static = {
+            watch: false
+        };
+        options.watchFiles = {
+            paths: ['src/**/*.php', 'templates/**/*'],
+        };
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();

@@ -8,4 +8,5 @@ npm install
 Download Symfony CLI and run :
 ```bash
 symfony serve:start -d
+npm run dev-server    # for hot reload
 ```

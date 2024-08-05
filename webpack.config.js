@@ -15,6 +15,8 @@ Encore
 
     .enableReactPreset()
 
+    .enablePostCssLoader()
+
     .enableStimulusBridge('./assets/controllers.json')
 
     .enableSingleRuntimeChunk()
